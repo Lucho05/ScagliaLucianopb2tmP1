@@ -1,6 +1,6 @@
 package ar.edu.unlam.pb2.parcial1;
 
-public class Libro {
+public class Libro extends Producto{
 
 	private Integer codigo;
 	private String descripcion;
@@ -29,6 +29,11 @@ public class Libro {
 
 	public String getEditorial() {
 		return editorial;
+	}
+
+	@Override
+	protected Object getEstadoActual() {
+		return null;
 	}
 
 	
